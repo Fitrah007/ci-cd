@@ -19,3 +19,25 @@ Content-Type: application/json
 ###
 GET http://localhost:3000/whoami
 Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6InNhYnJpbmEiLCJlbWFpbCI6InNhYnJpbmFAbWFpbC5jb20iLCJpYXQiOjE2ODI2OTI2MDh9.VneW1WUp6Cupqe2H4zdYwwc18Ows-8OXnjd1nd1vTCY
+
+###
+POST  auth-app-production-75f8.up.railway.app/auth/register
+Content-Type: application/json
+
+{
+    "name":"sabrina",
+    "email":"sabrina@mail.com",
+    "password":"password123"
+}
+### 
+POST auth-app-production-75f8.up.railway.app/auth/login
+Content-Type: application/json
+
+{
+    "email":"sabrina@mail.com",
+    "password":"password123"
+}
+
+###
+GET auth-app-production-75f8.up.railway.app/auth/whoami
+authorization: : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6InNhYnJpbmEiLCJlbWFpbCI6InNhYnJpbmFAbWFpbC5jb20iLCJpYXQiOjE2ODQzMjY3MTR9.x9iAZa9UVABIFBMIAkqL1_tSUCXkwKaK87vlEn7Deag
